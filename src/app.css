@@ -1,0 +1,52 @@
+@import '@fontsource/fira-mono';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark light;
+
+  --white: oklch(100% 0 0);
+  --black: oklch(0 0 0);
+  --blue-dark: oklch(0.3 0.2 240);
+  --blue-light: oklch(0.7 0.2 240);
+
+  --color: light-dark(oklch(0 0 0), oklch(1 0 0));
+  --background-color: light-dark(oklch(1 0 0), oklch(0 0 0));
+  --primary: light-dark(oklch(0.7 0.2 240), oklch(0.3 0.2 240));
+
+  --border-radius: 0.5rem;
+  --padding: 1rem;
+  --margin: 1rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background-color);
+  color: contrast-color(var(--background-color) lch);
+  margin: 0;
+}
+
+header {
+  background-color: var(--primary);
+  color: contrast-color(var(--primary) lch);
+}
+
+nav {
+  padding: var(--padding);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
