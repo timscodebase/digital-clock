@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DigitalClock from './digital-clock.svelte';
+	import DigitalClockWithFont from './digital-clock-with-font.svelte';
 
 	const countdownTarget = new Date(Date.now() + 48 * 60 * 60 * 1000);
 </script>
@@ -22,6 +23,10 @@
 	<div>
 		<h2>48 Hour Countdown (Default Style)</h2>
 		<DigitalClock targetDate={countdownTarget} skew={-5} />
+	</div>
+	<div>
+		<h2>48 Hour Countdown (Default Style)</h2>
+		<DigitalClockWithFont targetDate={countdownTarget} skew={-5} blur={2} fontSize={6} />
 	</div>
 </div>
 

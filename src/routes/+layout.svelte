@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from './Header.svelte';
-	import '../app.css';
+	import Footer from './Footer.svelte';
+	import './app.css';
 
 	let { children } = $props();
 </script>
@@ -12,11 +13,7 @@
 		{@render children()}
 	</main>
 
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
